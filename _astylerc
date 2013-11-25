@@ -1,0 +1,11 @@
+style=k&r
+indent=spaces=4
+convert-tabs
+indent-namespaces
+indent-preprocessor
+indent-col1-comments
+pad-oper
+break-blocks
+suffix=none
+align-pointer=name
+lineend=linux
