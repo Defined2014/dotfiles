@@ -1,0 +1,19 @@
+# .bashrc
+
+# Source global definitions
+source ~/.git-prompt.sh
+PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
+
+# User specific aliases and functions
+
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+    export TERM='xterm-256color'
+else
+    export TERM='xterm-color'
+fi
+
+# alias {
+    alias gs='git status'
+    alias vg='valgrind --leak-check=full --show-reachable=yes --log-file=vg.log --error-limit=no'
+    alias cl='clear&&ls -p'
+# }
