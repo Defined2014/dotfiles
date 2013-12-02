@@ -50,6 +50,9 @@ create_symlinks() {
     lnif "$path/_astylerc"            "$HOME/.astylerc"
     lnif "$path/_vimrc"               "$HOME/.vimrc"
     lnif "$path/_git-prompt.sh"       "$HOME/.git-prompt.sh"
+    lnif "$path/_bashrc"              "$HOME/.bashrc.sh"
+
+    echo "source .bashrc.sh" >> "$HOME/.bashrc"
     ret="$?"
     success "$1"
 }
@@ -70,6 +73,7 @@ setup_vundle() {
 
     success "$1"
 }
+
 
 ####################### MAIN()
 program_exists "vim" "Install Vim first"
