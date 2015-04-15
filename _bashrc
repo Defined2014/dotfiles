@@ -16,4 +16,18 @@ fi
     alias gs='git status'
     alias vg='valgrind --leak-check=full --show-reachable=yes --log-file=vg.log --error-limit=no'
     alias cl='clear&&ls -p'
+    alias vi='vim'
+    alias t='tmux a -t'
+    alias tl='tmux ls'
+    alias tn='tmux new -s'
 # }
+
+tmux_init()
+{
+    tmux new-session -d -n "local"    # 开启一个会话
+    tmux -2 attach-session -d
+}
+
+#if which tmux 2>&1 >/dev/null; then
+#    test -z "$TMUX" && (tmux attach || tmux_init)
+#fi
