@@ -21,6 +21,8 @@ fi
     alias tl='tmux ls'
     alias tn='tmux new -s'
 # }
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='01;04;32'
 
 tmux_init()
 {
