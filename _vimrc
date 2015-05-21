@@ -92,3 +92,7 @@
     set tags=tags;
     set autochdir
 " }
+" Color {
+    hi Search term=standout ctermfg=0 ctermbg=11 guifg=Black
+" }
+let loaded_matchparen = 1
