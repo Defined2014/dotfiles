@@ -2,6 +2,7 @@
 
 # Source global definitions
 source ~/.git-prompt.sh
+
 PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
 
 # User specific aliases and functions
@@ -16,4 +17,5 @@ fi
     alias gs='git status'
     alias vg='valgrind --leak-check=full --show-reachable=yes --log-file=vg.log --error-limit=no'
     alias cl='clear&&ls -p'
+    alias ls='ls --color'
 # }

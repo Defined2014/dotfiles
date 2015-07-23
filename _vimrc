@@ -67,7 +67,6 @@
     set scrolljump=5                " Lines to scroll when cursor leaves screen
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
-    set list
     set laststatus=2
     "set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 " }
@@ -85,7 +84,7 @@
 " Key Map {
     let mapleader = ","
     map <Leader>n :NERDTreeToggle<CR>
-    map <Leader>t :TlistToggle<CR>
+    map <Leader>t :TagbarToggle<CR>
     map <Leader>a :A<CR>
     map <Leader>v :AV<CR>
 " }
@@ -93,3 +92,7 @@
     set tags=tags;
     set autochdir
 " }
+" Color {
+    hi Search term=standout ctermfg=0 ctermbg=11 guifg=Black
+" }
+set fileencodings=utf-8,gb18030,utf-16,big5
