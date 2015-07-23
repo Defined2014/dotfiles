@@ -12,6 +12,7 @@
     Bundle 'vim-scripts/taglist.vim'
     Bundle 'bling/vim-airline'
     Bundle 'vim-scripts/a.vim'
+    Bundle 'kchmck/vim-coffee-script'
 
     " My bundles here:
     " Bundle 'taglist'
@@ -48,7 +49,6 @@
 " }
 
 " Vim UI {
-    set nu
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
     set cursorline                  " Highlight current line
