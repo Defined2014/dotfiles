@@ -25,8 +25,9 @@ fi
     alias t='tmux a -t'
     alias tl='tmux ls'
     alias tn='tmux new -s'
+    alias grepc='grep --color=always'
 # }
-export GREP_OPTIONS='--color=auto'
+export GREP_OPTIONS="--color=auto"
 export GREP_COLOR='01;04;32'
 
 tmux_init()
