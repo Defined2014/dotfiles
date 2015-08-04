@@ -13,6 +13,7 @@
     Bundle 'bling/vim-airline'
     Bundle 'vim-scripts/a.vim'
     Bundle 'kchmck/vim-coffee-script'
+    Bundle 'fatih/vim-go'
 
     " My bundles here:
     " Bundle 'taglist'
