@@ -14,6 +14,8 @@
     Bundle 'vim-scripts/a.vim'
     Bundle 'kchmck/vim-coffee-script'
     Bundle 'fatih/vim-go'
+    Bundle 'dgryski/vim-godef'
+    Bundle 'kien/ctrlp.vim'
 
     " My bundles here:
     " Bundle 'taglist'
@@ -85,7 +87,7 @@
 " Key Map {
     let mapleader = ","
     map <Leader>n :NERDTreeToggle<CR>
-    map <Leader>t :TlistToggle<CR>
+    map <Leader>t :TagbarToggle<CR>
     map <Leader>a :A<CR>
     map <Leader>v :AV<CR>
 " }
@@ -93,3 +95,43 @@
     set tags=tags;
     set autochdir
 " }
+" Color {
+    hi Search term=standout ctermfg=0 ctermbg=11 guifg=Black
+" }
+" Gotags {
+    let g:tagbar_type_go = {
+        \ 'ctagstype' : 'go',
+        \ 'kinds'     : [
+            \ 'p:package',
+            \ 'i:imports:1',
+            \ 'c:constants',
+            \ 'v:variables',
+            \ 't:types',
+            \ 'n:interfaces',
+            \ 'w:fields',
+            \ 'e:embedded',
+            \ 'm:methods',
+            \ 'r:constructor',
+            \ 'f:functions'
+        \ ],
+        \ 'sro' : '.',
+        \ 'kind2scope' : {
+            \ 't' : 'ctype',
+            \ 'n' : 'ntype'
+        \ },
+        \ 'scope2kind' : {
+            \ 'ctype' : 't',
+            \ 'ntype' : 'n'
+        \ },
+        \ 'ctagsbin'  : 'gotags',
+        \ 'ctagsargs' : '-sort -silent'
+        \ }
+" }
+" crtlp {
+    let g:ctrlp_map = '<c-p>'
+    let g:ctrlp_cmd = 'CtrlP'
+    let g:ctrlp_working_path_mode = 'ra'
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+    let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+" }
+set fileencodings=utf-8,gb18030,utf-16,big5

@@ -2,6 +2,10 @@
 
 # Source global definitions
 source ~/.git-prompt.sh
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
 
 # User specific aliases and functions
@@ -16,12 +20,14 @@ fi
     alias gs='git status'
     alias vg='valgrind --leak-check=full --show-reachable=yes --log-file=vg.log --error-limit=no'
     alias cl='clear&&ls -p'
+    alias ls='ls --color'
     alias vi='vim'
     alias t='tmux a -t'
     alias tl='tmux ls'
     alias tn='tmux new -s'
+    alias grepc='grep --color=always'
 # }
-export GREP_OPTIONS='--color=auto'
+export GREP_OPTIONS="--color=auto"
 export GREP_COLOR='01;04;32'
 
 tmux_init()
