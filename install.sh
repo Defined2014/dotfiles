@@ -52,7 +52,7 @@ create_symlinks() {
     lnif "$path/_git-prompt.sh"       "$HOME/.git-prompt.sh"
     lnif "$path/_bashrc"              "$HOME/.bashrc.sh"
 
-    echo "source .bashrc.sh" >> "$HOME/.bashrc"
+    echo "source $HOME/.bashrc.sh" >> "$HOME/.bashrc"
     ret="$?"
     success "$1"
 }
