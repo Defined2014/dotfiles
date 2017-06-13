@@ -134,3 +134,4 @@
     let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " }
 set fileencodings=utf-8,gb18030,utf-16,big5
+let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:./include'

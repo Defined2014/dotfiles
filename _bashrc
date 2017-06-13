@@ -17,7 +17,7 @@ else
 fi
 
 # alias {
-    alias gs='git status'
+    alias gs='git status --untracked-files=no'
     alias vg='valgrind --leak-check=full --show-reachable=yes --log-file=vg.log --error-limit=no'
     alias cl='clear&&ls -p'
     alias ls='ls --color'
