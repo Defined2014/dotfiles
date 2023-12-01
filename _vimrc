@@ -96,7 +96,7 @@
     set autochdir
 " }
 " Color {
-    hi Search term=standout ctermfg=0 ctermbg=11 guifg=Black
+    " hi Search term=standout ctermfg=0 ctermbg=11
 " }
 " Gotags {
     let g:tagbar_type_go = {
@@ -136,3 +136,4 @@
 " }
 set fileencodings=utf-8,gb18030,utf-16,big5
 let g:alternateSearchPath = 'sfr:../source,sfr:../src,sfr:../include,sfr:../inc,sfr:./include'
+autocmd FileType yaml setlocal expandtab tabstop=4 shiftwidth=4
