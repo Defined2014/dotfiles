@@ -19,7 +19,7 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restric
 EOF
 
 sudo apt update
-sudo apt install python-is-python3 python3-pip mosh ctags-universal docker.io docker-compose -y
+sudo apt install python-is-python3 python3-pip mosh universal-ctags docker.io docker-compose -y
 
 # config screen
 read -d '' screenrc << EOF
