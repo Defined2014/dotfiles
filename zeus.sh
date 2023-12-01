@@ -80,4 +80,4 @@ fi
 sudo usermod -aG docker $username
 
 # 配置vim
-./install.sh
+sh install.sh
