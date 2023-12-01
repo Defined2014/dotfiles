@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -ex
 # 换清华源
 # 备份原始的 sources.list 文件
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
